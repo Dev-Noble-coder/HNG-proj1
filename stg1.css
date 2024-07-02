@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+ background-color: #003049;   
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: 600;
+}
+.header a{
+    text-decoration: none;
+    color: white /* #fdf0d5 #c1121f #003049 #669bbc #780000;*/;
+font-size: 20px;
+padding-left: 40px;
+   
+}
+.header ul{
+    list-style-type: none;
+    padding-top: 10px;
+    display: flex;
+}
+
+#hero{
+    padding-bottom: 170px;
+    background-image: url(debashis-rc-biswas-dyPFnxxUhYk-unsplash.jpg);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: white;
+}
+#hero h1{
+    padding-top: 130px;
+    padding-left: 30px;
+    font-size: 35px;
+    max-width: 600px;
+}
+#hero p{
+    padding-left: 30px;
+    padding-top: 15px;
+    font-size: 20px;
+    max-width: 400px;
+}
+#hero a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+#hero button{
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #003049 ;
+    border: none;
+    border-radius: 10px;
+}
+#hero button:hover{
+    transform: scale(1.2);
+}
+
+#about{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 170px;
+    padding-bottom: 170px;
+    
+}
+#about img{
+    border-radius: 100%;
+    align-self: center;
+}
+.abtMe{
+    padding-top: 30px;
+}
+
+.abtMe h2{
+    text-align: center;
+    color: #003049;
+}
+.abtMe p{
+    max-width: 400px;
+    line-height: 45px;
+    color: #003049;
+}
+#goals{
+    background-color: #669bbc;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    color: white;
+}
+#goals h2{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.timeline{
+    display: flex;
+    justify-content: space-evenly;
+}
+.timeline h3{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+.timeline p{
+    max-width: 400px;
+    line-height: 30px;
+
+}
+#contact{
+   
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
+}
+#contact h2{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+.contact a{
+    text-decoration: none;
+    color: #003049;
+}
+#contact ul li{
+    list-style-type: none;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color:  #003049;
+    padding: 15px;
+}
+footer p{
+    font-weight: 600;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+#time, #day{
+    font-weight: 700;
+}
+.open{
+    display: none;
+}
+@media screen and (max-width: 639px){
+    .header{
+        display: none;
+        flex-direction: column;
+    }
+    .header{
+        text-align: left;
+    }
+    .header ul{
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        
+    }
+    .logo span{
+        padding-left: 50px;
+    }
+   .display{
+    display: block;
+   }
+    .open{
+        display:block;
+        color: white;
+    }
+    .open span{
+        font-size: 60px;
+        padding: 10px;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    .abtMe p{
+        text-align: center;
+        padding: 20px;
+    }
+    .timeline{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .goal{
+        padding: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+} 
