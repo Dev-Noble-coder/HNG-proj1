@@ -14,19 +14,20 @@ sidebar.addEventListener('click', () => {
 })
 
 
-function updateTime() {
-   
-    let currentTime = new Date();
-    let currentTimeMillis = currentTime.getTime();
-    let currentUTCTime = currentTime.toISOString() ;
-    
-    console.log("Current time in milliseconds: " + currentTimeMillis);
-    console.log("Current time in UTC: " + currentUTCTime);
-    displayDate = String(currentTime).slice(15,29)
-    document.getElementById('time').innerHTML= displayDate
- }
- 
- setInterval(updateTime, 1000);
+
+
+function updateTimeAndDay() {
+  const now = new Date();
+  const isoString = now.toISOString();
+  const utcTime = isoString.slice(11, 19);
+  const dayOfWeek = now.toLocaleDateString("en-US", { weekday: "long" });
+
+   document.getElementById('time').textContent = utcTime;
+  
+}
+
+updateTimeAndDay();
+setInterval(updateTimeAndDay, 60000);
 
  
  const date = new Date();
