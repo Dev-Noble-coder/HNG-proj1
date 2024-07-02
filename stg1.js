@@ -22,7 +22,7 @@ function updateTimeAndDay() {
   const utcTime = isoString.slice(11, 19);
   const dayOfWeek = now.toLocaleDateString("en-US", { weekday: "long" });
 
-   document.getElementById('time').textContent = utcTime;
+   document.getElementById('time').textContent = ucTime;
   
 }
 
